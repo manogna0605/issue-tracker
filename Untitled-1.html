@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Priority</th>
+      <th>Assignee</th>
+      <th>Updated At</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let issue of issues">
+      <td>{{ issue.id }}</td>
+      <td>{{ issue.title }}</td>
+      <td>{{ issue.status }}</td>
+      <td>{{ issue.priority }}</td>
+      <td>{{ issue.assignee }}</td>
+      <td>{{ issue.updatedAt }}</td>
+      <td><button>Edit</button></td>
+    </tr>
+  </tbody>
+</table>
